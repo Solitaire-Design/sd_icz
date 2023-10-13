@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/public/content/mu-plugins/soil/src" isTestSource="false" packagePrefix="Roots\Soil\" />
+      <sourceFolder url="file://$MODULE_DIR$/public/content/mu-plugins/soil/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/public/content/mu-plugins/soil/tests" isTestSource="true" packagePrefix="Roots\Soil\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/public/content/mu-plugins/soil/tests/__fixtures__/modules" isTestSource="true" packagePrefix="Roots\Soil\Tests\Fixtures\Modules\" />
+      <sourceFolder url="file://$MODULE_DIR$/public/content/plugins/query-monitor/tests/integration" isTestSource="true" packagePrefix="QM\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/public/wp/wp-includes/sodium_compat/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/public/content/plugins/query-monitor/vendor/composer" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
