@@ -1,14 +1,5 @@
-<p align="center">
-  <a href="https://roots.io/radicle/">
-    <img alt="Radicle" src="https://cdn.roots.io/app/uploads/logo-radicle.svg" height="100">
-  </a>
-</p>
-
-<p align="center">Radicle is a WordPress stack from Roots</p>
-
-<p align="center">
-  <a href="https://roots.io/radicle/">Website</a> &nbsp;&nbsp; <a href="https://roots.io/radicle/docs/installation/">Documentation</a> &nbsp;&nbsp; <a href="https://github.com/roots/radicle/releases">Releases</a> &nbsp;&nbsp; <a href="https://discourse.roots.io/c/radicle">Community</a>
-</p>
+# ICZ 2024
+Version: 0.0.1 <!--- x-release-please-version -->
 
 ## Server requirements
 
