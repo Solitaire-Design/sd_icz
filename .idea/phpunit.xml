@@ -3,8 +3,9 @@
   <component name="PHPUnit">
     <option name="directories">
       <list>
-        <option value="$PROJECT_DIR$/public/content/mu-plugins/soil/tests" />
         <option value="$PROJECT_DIR$/public/wp/wp-includes/sodium_compat/tests" />
+        <option value="$PROJECT_DIR$/public/content/mu-plugins/soil/tests" />
+        <option value="$PROJECT_DIR$/tests" />
       </list>
     </option>
   </component>
