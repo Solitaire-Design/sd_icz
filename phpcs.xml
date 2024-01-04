@@ -21,6 +21,7 @@
     <exclude-pattern>public/content/mu-plugins/bedrock-disallow-indexing/</exclude-pattern>
     <exclude-pattern>public/content/mu-plugins/soil/</exclude-pattern>
     <exclude-pattern>public/content/plugins/</exclude-pattern>
+    <exclude-pattern>public/content/</exclude-pattern>
     <exclude-pattern>public/wp</exclude-pattern>
     <exclude-pattern>vendor/</exclude-pattern>
 

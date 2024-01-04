@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "192b773f50e9885539d81adbf4c60da4",
+    "content-hash": "82b080db759b53eb93bdf2955a5d7f2f",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -7194,6 +7194,24 @@
             "time": "2022-03-08T17:03:00+00:00"
         },
         {
+            "name": "wpackagist-plugin/autodescription",
+            "version": "5.0.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autodescription/",
+                "reference": "tags/5.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.5.0.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autodescription/"
+        },
+        {
             "name": "wpackagist-plugin/formidable",
             "version": "6.7",
             "source": {
@@ -7210,6 +7228,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/formidable/"
+        },
+        {
+            "name": "wpackagist-plugin/intervention",
+            "version": "2.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/intervention/",
+                "reference": "tags/2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/intervention.2.0.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/intervention/"
         },
         {
             "name": "wpackagist-plugin/safe-svg",
@@ -7264,6 +7300,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/translatepress-multilingual/"
+        },
+        {
+            "name": "wpackagist-plugin/w3-total-cache",
+            "version": "2.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
+                "reference": "tags/2.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.2.6.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/w3-total-cache/"
         }
     ],
     "packages-dev": [
@@ -11292,5 +11346,5 @@
     "platform-overrides": {
         "php": "8.1.19"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.2.0"
 }

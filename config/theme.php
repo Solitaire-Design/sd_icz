@@ -12,6 +12,28 @@ return [
     ],
 
     /**
+     * Dashboard widgets
+     *
+     * @link https://developer.wordpress.org/reference/functions/wp_add_dashboard_widget/
+     */
+    'dashboard_widgets' => [
+        /**
+         * Widget instances
+         */
+        'solitaire-support' => [
+            'id' => 'solitaire-support',
+            'title' => __('SolitaireDesign Support', 'icz'),
+            'callback' => "dashboardWidgetCallback",
+        ],
+        // [
+        //     'id' => 'dashboard_widget_id',
+        //     'title' => __('Dashboard Widget Title', 'icz'),
+        //     'callback' => 'dashboard_widget_callback',
+        //     'control_callback' => 'dashboard_widget_control_callback',
+        // ],
+    ],
+
+    /**
      * Image sizes
      *
      * @link https://developer.wordpress.org/reference/functions/add_image_size/

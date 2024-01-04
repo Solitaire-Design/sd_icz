@@ -1,16 +1,17 @@
-import type { Bud } from "@roots/bud";
+import type { Bud } from '@roots/bud'
 
 /**
  * Bud config
  */
 export default async (bud: Bud) => {
   bud
-    .proxy(`http://radicle.lndo.site`)
+    .proxy(`http://icz.lndo.site`)
     .serve(`http://localhost:4000`)
     .watch([bud.path(`resources/views`), bud.path(`app`)])
 
     .entry(`app`, [`@scripts/app`, `@styles/app`])
     .entry(`editor`, [`@scripts/editor`, `@styles/editor`])
+    .entry(`admin`, [`@scripts/admin`, `@styles/admin`])
     .copyDir(`images`)
 
     .setPublicPath(`/dist/`)
@@ -29,8 +30,8 @@ export default async (bud: Bud) => {
       custom: {
         spacing: {},
         typography: {
-          "font-size": {},
-          "line-height": {},
+          'font-size': {},
+          'line-height': {},
         },
       },
       layout: {
@@ -58,13 +59,12 @@ export default async (bud: Bud) => {
         fontSize: `var(--wp--preset--font-size--normal)`,
       },
     })
-    .setPath(bud.path(`public/content/themes/icz/theme.json`));
+    .setPath(bud.path(`public/content/themes/icz/theme.json`))
 
   bud.when(`tailwind` in bud, ({ wpjson }) =>
-    wpjson.useTailwindColors().useTailwindFontFamily().useTailwindFontSize()
-  );
+    wpjson.useTailwindColors().useTailwindFontFamily().useTailwindFontSize())
 
-  await bud.tapAsync(sourceThemeValues);
+  await bud.tapAsync(sourceThemeValues)
 
   bud
     .when(`eslint` in bud, ({ eslint }) =>
@@ -75,8 +75,7 @@ export default async (bud: Bud) => {
           `plugin:react/jsx-runtime`,
         ])
         .setFix(true)
-        .setFailOnWarning(bud.isProduction)
-    )
+        .setFailOnWarning(bud.isProduction))
 
     /**
      * Stylelint config
@@ -88,29 +87,27 @@ export default async (bud: Bud) => {
           `@roots/bud-tailwindcss/stylelint-config`,
         ])
         .setFix(true)
-        .setFailOnWarning(bud.isProduction)
-    )
+        .setFailOnWarning(bud.isProduction))
 
     /**
      * Image minification config
      */
     .when(`imagemin` in bud, ({ imagemin }) =>
-      imagemin.encode(`jpeg`, { mozjpeg: true, quality: 70 })
-    );
-};
+      imagemin.encode(`jpeg`, { mozjpeg: true, quality: 70 }))
+}
 
 /**
  * Find all `*.theme.js` files and apply them to the `theme.json` output
  */
-const sourceThemeValues = async ({ error, glob, wpjson }: Bud) => {
+async function sourceThemeValues({ error, glob, wpjson }: Bud) {
   const importMatching = async (paths: Array<string>) =>
-    await Promise.all(paths.map(async (path) => (await import(path)).default));
+    await Promise.all(paths.map(async path => (await import(path)).default))
 
   const setThemeValues = (records: Record<string, unknown>) =>
-    Object.entries(records).map((params) => wpjson.set(...params));
+    Object.entries(records).map(params => wpjson.set(...params))
 
   await glob(`resources/**/*.theme.js`)
     .then(importMatching)
-    .then((modules) => modules.map(setThemeValues))
-    .catch(error);
-};
+    .then(modules => modules.map(setThemeValues))
+    .catch(error)
+}

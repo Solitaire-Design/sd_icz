@@ -1,6 +1,6 @@
 // https://tailwindcss.com/docs/configuration
-import type { Config } from 'tailwindcss';
-import forms from '@tailwindcss/forms';
+import type { Config } from 'tailwindcss'
+import forms from '@tailwindcss/forms'
 
 export default {
   content: [
@@ -47,4 +47,4 @@ export default {
   plugins: [
     forms,
   ],
-} satisfies Config;
+} satisfies Config

@@ -76,10 +76,13 @@
         "roots/wp-password-bcrypt": "1.1.0",
         "roots/wp-stage-switcher": "^2.2",
         "vlucas/phpdotenv": "^5.5",
+        "wpackagist-plugin/autodescription": "5.0.2",
         "wpackagist-plugin/formidable": "6.7",
+        "wpackagist-plugin/intervention": "^2.0",
         "wpackagist-plugin/safe-svg": "^2.1",
         "wpackagist-plugin/the-events-calendar": "6.2.9",
-        "wpackagist-plugin/translatepress-multilingual": "2.6.9"
+        "wpackagist-plugin/translatepress-multilingual": "2.6.9",
+        "wpackagist-plugin/w3-total-cache": "2.6.1"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^1.0",

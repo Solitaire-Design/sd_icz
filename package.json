@@ -23,21 +23,23 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --fix",
-    "**/*.php": ["php ./vendor/bin/phpcs","php ./vendor/bin/pint"]
+    "**/*.php": [
+      "php ./vendor/bin/phpcs",
+      "php ./vendor/bin/pint"
+    ]
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",
     "@playwright/test": "1.38.0",
-    "@roots/bud": "6.16.1",
-    "@roots/bud-eslint": "6.16.1",
-    "@roots/bud-imagemin": "6.16.1",
-    "@roots/bud-preset-wordpress": "6.16.1",
-    "@roots/bud-prettier": "6.16.1",
-    "@roots/bud-stylelint": "6.16.1",
-    "@roots/bud-swc": "6.16.1",
-    "@roots/bud-tailwindcss": "6.16.1",
-    "@roots/eslint-config": "6.16.1",
-    "@roots/sage": "6.16.1",
+    "@roots/bud": "6.20.0",
+    "@roots/bud-imagemin": "6.20.0",
+    "@roots/bud-preset-wordpress": "6.20.0",
+    "@roots/bud-prettier": "6.20.0",
+    "@roots/bud-stylelint": "6.20.0",
+    "@roots/bud-swc": "6.20.0",
+    "@roots/bud-tailwindcss": "6.20.0",
+    "@roots/eslint-config": "6.20.0",
+    "@roots/sage": "6.20.0",
     "@tailwindcss/forms": "^0.5.3",
     "@types/alpinejs": "^3.7.1",
     "@types/wordpress__block-editor": "11.5.3",
@@ -49,7 +51,8 @@
     "typescript": "5.2.2"
   },
   "dependencies": {
-    "@roots/wordpress-hmr": "6.16.1",
-    "alpinejs": "3.13.0"
+    "@roots/wordpress-hmr": "6.20.0",
+    "alpinejs": "3.13.0",
+    "sharp": "^0.33.1"
   }
 }

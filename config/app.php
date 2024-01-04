@@ -19,6 +19,9 @@ return [
 
     'name' => env('APP_NAME', 'Radicle'),
 
+    'support_email' => 'support@solitairedesign.de',
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

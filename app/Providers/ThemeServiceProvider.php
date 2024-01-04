@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Collection;
 use Roots\Acorn\Sage\SageServiceProvider;
 
@@ -47,6 +48,37 @@ class ThemeServiceProvider extends SageServiceProvider
                     array_merge(config('theme.sidebar.config'), $instance)
                 ));
         });
+
+        /**
+         * Register Dashboard widgets from the theme config and remove default boxes.
+         *
+         * @return void
+         */
+        add_action('wp_dashboard_setup', function (): void {
+            // Remove Welcome panel
+            remove_action('welcome_panel', 'wp_welcome_panel');
+            // Remove the rest of the dashboard widgets
+            remove_meta_box('dashboard_primary', 'dashboard', 'side');
+            remove_meta_box('dashboard_quick_press', 'dashboard', 'side');
+            remove_meta_box('health_check_status', 'dashboard', 'normal');
+            remove_meta_box('dashboard_right_now', 'dashboard', 'normal');
+            remove_meta_box('dashboard_activity', 'dashboard', 'normal');
+            remove_meta_box('tribe_dashboard_widget', 'dashboard', 'normal');
+
+            Collection::make(config('theme.dashboard_widgets'))
+                ->each(fn ($instance) => wp_add_dashboard_widget(
+                    $instance['id'],
+                    $instance['title'],
+                    function () {
+                        echo $this->dashboardWidgetCallback();
+                    }
+                ));
+        });
+    }
+
+    public function dashboardWidgetCallback()
+    {
+        return view('dashboard.solitaire-support');
     }
 
     /**

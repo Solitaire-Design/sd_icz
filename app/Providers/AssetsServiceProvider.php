@@ -36,6 +36,15 @@ class AssetsServiceProvider extends ServiceProvider
         }, 100);
 
         /**
+         * Register the theme assets with the admin dashboard.
+         *
+         * @return void
+         */
+        add_action('admin_enqueue_scripts', function (): void {
+            bundle('admin')->enqueue();
+        }, 100);
+
+        /**
          * Add the type="module" attribute to script tags that have the .mjs extension.
          *
          * @param  string $tag
