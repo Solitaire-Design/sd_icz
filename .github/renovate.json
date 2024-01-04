@@ -14,8 +14,8 @@
     },
     {
       "groupName": "Alpine.js",
-      "matchPackagePrefixes": ["alpinejs", "@alpinejs/", "@types/alpinejs"],
+      "matchPackagePrefixes": ["alpinejs", "@alpinejs/", "@types/alpinejs"]
     }
   ],
-  "timezone": "America/Los_Angeles"
+  "timezone": "Europe/Berlin"
 }

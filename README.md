@@ -8,14 +8,6 @@ Version: 0.0.1 <!--- x-release-please-version -->
 * Composer
 * WP-CLI
 
-If you are using a managed WordPress host, make sure that they meet these requirements if you're wanting to deploy your Radicle projects to them.
-
-## Getting started
-
-📝 [**View the documentation**](https://roots.io/radicle/docs/)
-
-💄 Visit the `/welcome/` route for component demos
-
 ### Local development
 
 <details>
@@ -42,10 +34,10 @@ If you are using a managed WordPress host, make sure that they meet these requir
   <summary>🐳 Lando</summary>
   <br>
 
-  1. In `bud.config.js`: Replace `http://radicle.test` with `https://radicle.lndo.site`
+  1. In `bud.config.js`: Replace `http://icz.test` with `https://icz.lndo.site`
   1. Run `yarn && yarn build`
   1. Run `lando start`
-  1. Visit `https://radicle.lndo.site/`
+  1. Visit `https://icz.lndo.site/`
 
   You can run `lando login` to generate a passwordless wp-admin login URL (WordPress must first be installed)
 
@@ -55,7 +47,7 @@ If you are using a managed WordPress host, make sure that they meet these requir
   <summary>⚙️ Other</summary>
   <br>
 
-  1. In `bud.config.js`: Replace `http://radicle.test` with your local dev server URL
+  1. In `bud.config.js`: Replace `http://icz.test` with your local dev server URL
   1. Run `yarn && yarn build`
   1. Run `composer install`
   1. Configure your local development setup to set the `public/` directory as the webroot.
@@ -63,7 +55,7 @@ If you are using a managed WordPress host, make sure that they meet these requir
 
 </details>
 
-### Deploying Radicle
+### Deploying ICZ 2024
 
 <details>
   <summary>📦 Trellis</summary>
@@ -100,10 +92,3 @@ If you are using a managed WordPress host, make sure that they meet these requir
 | `resources/scripts/editor/`     | Block editor related scripts  |
 | `resources/views/`              | Theme templates               |
 
-## Support
-
-While we strive to help our customers in any way we can, a Radicle license doesn't cover the Roots team troubleshooting any application code issues that aren't directly related to Radicle itself.
-
-If you discover a bug in Radicle, please make a topic on [Roots Discourse](https://discourse.roots.io/c/radicle) with minimal reproduction instructions.
-
-If you have feature requests, questions, or feedback, please make a topic on [Roots Discourse](https://discourse.roots.io/c/radicle) or use the #radicle channel on our Discord server.
