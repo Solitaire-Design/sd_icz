@@ -2,7 +2,6 @@
   "extends": ["@roots/bud/config/tsconfig.json"],
   "compilerOptions": {
     "baseUrl": "./resources",
-    "outDir": "./public/dist",
     "paths": {
       "@scripts": ["scripts"],
       "@styles": ["styles"]
@@ -19,9 +18,11 @@
       "@roots/sage",
       "@types/alpinejs",
       "webpack/module"
-    ]
+    ],
+    "outDir": "./public/dist"
   },
-  "files": ["types/custom.d.ts", "bud.config.ts"],
+  "files": ["types/custom.d.ts", "bud.config.ts"
+  ],
   "include": ["resources"],
   "bud": {
     "useCompilerOptions": true

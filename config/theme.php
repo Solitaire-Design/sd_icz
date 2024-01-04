@@ -62,16 +62,6 @@ return [
         ],
 
         /**
-         * @link https://roots.io/products/soil/
-         */
-        'soil' =>  [
-            'clean-up',
-            'nav-walker',
-            'nice-search',
-            'relative-urls' => php_sapi_name() !== 'cli',
-        ],
-
-        /**
          * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/themes/theme-support/#wide-alignment
          */
         'align-wide',

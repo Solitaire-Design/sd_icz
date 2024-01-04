@@ -1,6 +1,6 @@
 <?php
 
-if (! function_exists('\Roots\bootloader')) {
+if (!function_exists('\Roots\bootloader')) {
     wp_die(
         __('You need to install Acorn to use this site.', 'icz'),
         '',

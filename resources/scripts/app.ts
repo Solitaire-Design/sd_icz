@@ -1,5 +1,5 @@
-import alpine from 'alpinejs';
+import alpine from 'alpinejs'
 
-Object.assign(window, {Alpine: alpine}).Alpine.start();
+Object.assign(window, { Alpine: alpine }).Alpine.start()
 
-import.meta.webpackHot?.accept(console.error);
+import.meta.webpackHot?.accept(console.error)

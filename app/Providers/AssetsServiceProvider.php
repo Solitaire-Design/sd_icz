@@ -44,12 +44,12 @@ class AssetsServiceProvider extends ServiceProvider
         add_filter('script_loader_tag', function (string $tag): string {
             $hasModuleExtension = str_contains($tag, '.mjs"');
 
-            $hasModuleAttribute = ! empty(array_filter(
+            $hasModuleAttribute = !empty(array_filter(
                 ['type="module"', 'type=module', "type='module'"],
                 fn ($value) => str_contains($tag, $value)
             ));
 
-            if (! $hasModuleExtension || $hasModuleAttribute) {
+            if (!$hasModuleExtension || $hasModuleAttribute) {
                 return $tag;
             }
 
