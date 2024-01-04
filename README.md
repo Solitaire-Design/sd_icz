@@ -1,6 +1,7 @@
 # ICZ 2024
-Version: 0.0.1 <!--- x-release-please-version -->
-
+[![GitHub release](https://img.shields.io/github/release/Solitaire-Design/sd_icz?include_prereleases=&sort=semver&color=blue)](https://github.com/Solitaire-Design/sd_icz/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+![CodeQL](https://github.com/Solitaire-Design/sd_icz/actions/workflows/codeql.yml/badge.svg)
 ## Server requirements
 
 * Your document root must be configurable (_most_ local development tools and webhosts should support this)
