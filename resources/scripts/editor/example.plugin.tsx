@@ -10,7 +10,6 @@ export const title = __(`Example plugin`, `icz`)
 
 /** Plugin render */
 export function render() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     // Unregister all blocks that aren't in the text, media, design, or widget categories
     // Keep the `core/block` block so that the editor doesn't break

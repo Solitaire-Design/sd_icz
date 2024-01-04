@@ -22,7 +22,8 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --fix"
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "**/*.php": ["php ./vendor/bin/phpcs","php ./vendor/bin/pint"]
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",

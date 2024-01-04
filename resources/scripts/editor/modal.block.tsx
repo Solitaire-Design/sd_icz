@@ -29,7 +29,6 @@ export const attributes = {
 
 /* Block edit */
 export function edit({ attributes, setAttributes }) {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const props = useBlockProps({
     className: `border rounded-md p-3`,
   })
