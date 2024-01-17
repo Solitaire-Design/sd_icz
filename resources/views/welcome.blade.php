@@ -34,7 +34,7 @@
     <x-table
         :columns="['Attribute', 'Default', 'Options']"
         :rows="[
-            ['<code>type</code>', '<code>primary</code>', '<code>primary</code>, <code>outline</code>'],
+            ['<code>variant</code>', '<code>primary</code>', '<code>primary</code>, <code>outline</code>'],
             ['<code>size</code>', '<code>base</code>', '<code>xs</code>, <code>sm</code>, <code>base</code>, <code>lg</code>'],
             ['<code>element</code>', '<code>a</code>', '<code>a</code>, <code>button</code>'],
         ]"
@@ -44,8 +44,8 @@
         <pre class="mb-6"><code class="language-blade">&lt;x-button href="#"&gt;Button&lt;/x-button&gt;</code></pre>
         <x-button href="#">Button</x-button>
 
-        <pre class="my-6"><code class="language-blade">&lt;x-button type="outline" href="#"&gt;Button&lt;/x-button&gt;</code></pre>
-        <x-button type="outline" href="#">Button</x-button>
+        <pre class="my-6"><code class="language-blade">&lt;x-button variant="outline" href="#"&gt;Button&lt;/x-button&gt;</code></pre>
+        <x-button variant="outline" href="#">Button</x-button>
     </div>
 
     <h3 class="text-xl font-bold my-6" id="modals">Modals</h3>

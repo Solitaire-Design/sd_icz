@@ -3,7 +3,6 @@
 /**
  * W3 Total Cache advanced cache module
  */
-
 if (!defined('ABSPATH')) {
     die();
 }

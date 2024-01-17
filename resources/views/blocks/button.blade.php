@@ -1,5 +1,5 @@
 <x-button
-    type="{{ $type }}"
+    variant="{{ $variant }}"
     class="{{ $classes }}"
     href="{{ $href }}"
 >

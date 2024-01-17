@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 use function Roots\bundle;
@@ -25,6 +26,19 @@ class AssetsServiceProvider extends ServiceProvider
 
             remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
         }, 100);
+
+        /**
+         * Register livewire assets.
+         *
+         * @link
+         */
+        collect([
+            'wp_head' => '@livewireStyles',
+            'wp_footer' => '@livewireScripts',
+        ])->each(fn ($directive, $hook) =>
+        add_action($hook, function () use ($directive) {
+            echo Blade::render($directive);
+        }));
 
         /**
          * Register the theme assets with the block editor.

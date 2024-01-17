@@ -24,17 +24,17 @@ class BlocksServiceProvider extends ServiceProvider
                 $classes = $dom->getElementsByTagName('a')->item(0)->getAttribute('class');
                 $href = $dom->getElementsByTagName('a')->item(0)->getAttribute('href');
                 $text = $dom->getElementsByTagName('a')->item(0)->textContent;
-                $type = 'primary';
+                $variant = 'primary';
 
                 if (
                     isset($block['attrs']['className']) &&
                     strpos($block['attrs']['className'], 'is-style-outline') !== false
                 ) {
-                    $type = 'outline';
+                    $variant = 'outline';
                 }
 
                 return view('blocks.button', [
-                    'type' => $type,
+                    'variant' => $variant,
                     'classes' => $classes,
                     'href' => $href ?? null,
                     'text' => $text ?? null,

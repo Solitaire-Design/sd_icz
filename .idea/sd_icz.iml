@@ -5,10 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
       <sourceFolder url="file://$MODULE_DIR$/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
-      <sourceFolder url="file://$MODULE_DIR$/public/content/mu-plugins/soil/src" isTestSource="false" packagePrefix="Roots\Soil\" />
-      <sourceFolder url="file://$MODULE_DIR$/public/content/mu-plugins/soil/tests" isTestSource="true" packagePrefix="Roots\Soil\Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/public/content/mu-plugins/soil/tests/__fixtures__/modules" isTestSource="true" packagePrefix="Roots\Soil\Tests\Fixtures\Modules\" />
-      <sourceFolder url="file://$MODULE_DIR$/public/content/plugins/query-monitor/tests/integration" isTestSource="true" packagePrefix="QM\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/Providers" isTestSource="false" packagePrefix="Log1x\AcfComposer\Providers\" />
       <excludeFolder url="file://$MODULE_DIR$/public/content/plugins/query-monitor/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/blade-ui-kit/blade-heroicons" />
@@ -155,6 +152,16 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/encryption" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/queue" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/testing" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/validation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/prompts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/livewire/livewire" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

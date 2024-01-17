@@ -42,20 +42,25 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "Log1x\\AcfComposer\\Providers\\": "app/Providers/"
         },
         "files": [
             "app/helpers.php"
         ]
     },
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.1",
         "blade-ui-kit/blade-heroicons": "^2.1",
         "blade-ui-kit/blade-icons": "^1.5",
         "clarifynl/responsive-pics": "^1.8",
         "composer/installers": "^2.2",
         "guzzlehttp/guzzle": "^7.5",
+        "illuminate/encryption": "^10.40",
+        "illuminate/queue": "^10.40",
+        "illuminate/testing": "^10.40",
         "johnbillion/extended-cpts": "^5.0",
+        "livewire/livewire": "^3.3",
         "log1x/acf-composer": "^2.1",
         "log1x/acorn-disable-media-pages": "^1.0",
         "log1x/crumb": "^1.1",
@@ -66,11 +71,10 @@
         "log1x/wp-smtp": "^1.0",
         "masterminds/html5": "^2.8",
         "oscarotero/env": "^2.1",
-        "roots/acorn": "^3.1",
+        "roots/acorn": "^v4.0.0-beta.1",
         "roots/acorn-prettify": "^1.0",
         "roots/bedrock-autoloader": "^1.0",
         "roots/bedrock-disallow-indexing": "^2.0",
-        "roots/soil": "^4.1",
         "roots/wordpress": "6.3.1",
         "roots/wp-config": "1.0.0",
         "roots/wp-password-bcrypt": "1.1.0",
@@ -91,7 +95,7 @@
         "pestphp/pest": "^2.0",
         "phpcompatibility/php-compatibility": "^9.3",
         "roave/security-advisories": "dev-latest",
-        "spatie/laravel-ignition": "^1.6",
+        "spatie/laravel-ignition": "^2.1",
         "squizlabs/php_codesniffer": "^3.7"
     },
     "config": {
@@ -121,8 +125,7 @@
         },
         "installer-paths": {
             "public/content/mu-plugins/{$name}/": [
-                "type:wordpress-muplugin",
-                "roots/soil"
+                "type:wordpress-muplugin"
             ],
             "public/content/plugins/{$name}/": [
                 "type:wordpress-plugin"
