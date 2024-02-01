@@ -50,6 +50,21 @@ class AssetsServiceProvider extends ServiceProvider
         }, 100);
 
         /**
+         * Use theme.json from the build directory
+         *
+         * @param  string $path
+         * @param  string $file
+         * @return string
+         */
+        add_filter('theme_file_path', function (string $path, string $file): string {
+            if ($file === 'theme.json') {
+                return public_path() . '/dist/theme.json';
+            }
+
+            return $path;
+        }, 10, 2);
+
+        /**
          * Register the theme assets with the admin dashboard.
          *
          * @return void

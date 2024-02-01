@@ -46,7 +46,6 @@
       <path value="$PROJECT_DIR$/vendor/log1x/wp-smtp" />
       <path value="$PROJECT_DIR$/vendor/log1x/sage-svg" />
       <path value="$PROJECT_DIR$/vendor/log1x/crumb" />
-      <path value="$PROJECT_DIR$/vendor/dealerdirect/phpcodesniffer-composer-installer" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/termwind" />
@@ -121,10 +120,8 @@
       <path value="$PROJECT_DIR$/vendor/phpstan/phpdoc-parser" />
       <path value="$PROJECT_DIR$/vendor/illuminate/pipeline" />
       <path value="$PROJECT_DIR$/vendor/illuminate/database" />
-      <path value="$PROJECT_DIR$/vendor/illuminate/cache" />
       <path value="$PROJECT_DIR$/vendor/illuminate/pagination" />
       <path value="$PROJECT_DIR$/vendor/illuminate/contracts" />
-      <path value="$PROJECT_DIR$/vendor/illuminate/config" />
       <path value="$PROJECT_DIR$/vendor/illuminate/filesystem" />
       <path value="$PROJECT_DIR$/vendor/illuminate/bus" />
       <path value="$PROJECT_DIR$/vendor/illuminate/conditionable" />
@@ -184,6 +181,8 @@
       <path value="$PROJECT_DIR$/vendor/illuminate/testing" />
       <path value="$PROJECT_DIR$/vendor/illuminate/translation" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/cache" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/config" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />

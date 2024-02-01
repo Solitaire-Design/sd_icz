@@ -59,7 +59,7 @@ export default async (bud: Bud) => {
         fontSize: `var(--wp--preset--font-size--normal)`,
       },
     })
-    .setPath(bud.path(`public/content/themes/icz/theme.json`))
+    .setPath(bud.path(`public/dist/theme.json`))
 
   bud.when(`tailwind` in bud, ({ wpjson }) =>
     wpjson.useTailwindColors().useTailwindFontFamily().useTailwindFontSize())
@@ -88,12 +88,6 @@ export default async (bud: Bud) => {
         ])
         .setFix(true)
         .setFailOnWarning(bud.isProduction))
-
-    /**
-     * Image minification config
-     */
-    .when(`imagemin` in bud, ({ imagemin }) =>
-      imagemin.encode(`jpeg`, { mozjpeg: true, quality: 70 }))
 }
 
 /**
