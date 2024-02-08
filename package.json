@@ -50,7 +50,9 @@
   },
   "dependencies": {
     "@roots/wordpress-hmr": "6.20.0",
+    "@ryangjchandler/alpine-clipboard": "^2.3.0",
     "alpinejs": "3.13.0",
     "sharp": "^0.33.1"
-  }
+  },
+  "packageManager": "yarn@4.1.0"
 }

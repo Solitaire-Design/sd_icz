@@ -5,7 +5,7 @@
 ## Server requirements
 
 * Your document root must be configurable (_most_ local development tools and webhosts should support this)
-* PHP >= 8.0 with the following extensions: BCMath, Ctype, Fileinfo, JSON, Mbstring, Tokenizer, XML
+* PHP >= 8.1 with the following extensions: BCMath, Ctype, Fileinfo, JSON, Mbstring, Tokenizer, XML
 * Composer
 * WP-CLI
 

@@ -13,7 +13,17 @@
 
 <div id="app">
     <a class="sr-only focus:not-sr-only" href="#main">
-        @@ -27,8 +27,8 @@
+        {{ __('Skip to content') }}
+    </a>
+
+    @include('sections.header')
+
+    <main id="main" class="max-w-5xl mx-auto">
+        <div class="{{ $containerInnerClasses }}">
+            @yield('content')
+        </div>
+    </main>
+
     @include('sections.footer')
 </div>
 

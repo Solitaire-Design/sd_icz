@@ -5,5 +5,6 @@ export default antfu({
   rules: {
     'no-console': 'off',
     'react-hooks/rules-of-hooks': 'off',
+    'antfu/no-import-dist': 'off',
   },
 })

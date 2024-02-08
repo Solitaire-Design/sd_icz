@@ -32,6 +32,8 @@ services:
       - yarn install --immutable
       - yarn build
     scanner: false
+    overrides:
+      image: node:20
   sendmailhog:
     type: mailhog
     portforward: true

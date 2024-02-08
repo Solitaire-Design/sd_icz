@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
+use Roots\Acorn\ServiceProvider;
 
 use function Roots\env;
 
@@ -61,6 +62,8 @@ return [
 
     'url' => env('APP_URL', home_url()),
 
+    'asset_url' => env('ASSET_URL'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -72,7 +75,7 @@ return [
     |
     */
 
-    'timezone' => get_option('timezone_string', 'UTC'),
+    'timezone' => get_option('timezone_string') ?: 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -143,7 +146,7 @@ return [
 
     'maintenance' => [
         'driver' => 'file',
-        // 'store'  => 'redis',
+        // 'store' => 'redis',
     ],
 
     /*
@@ -157,38 +160,7 @@ return [
     |
     */
 
-    'providers' => [
-
-        /*
-         * Framework Service Providers...
-         */
-        Illuminate\Auth\AuthServiceProvider::class,
-        Illuminate\Broadcasting\BroadcastServiceProvider::class,
-        Illuminate\Bus\BusServiceProvider::class,
-        Illuminate\Cache\CacheServiceProvider::class,
-        Illuminate\Cookie\CookieServiceProvider::class,
-        Illuminate\Database\DatabaseServiceProvider::class,
-        Illuminate\Database\MigrationServiceProvider::class,
-        Illuminate\Encryption\EncryptionServiceProvider::class,
-        Illuminate\Foundation\Providers\ComposerServiceProvider::class,
-        Illuminate\Hashing\HashServiceProvider::class,
-        Illuminate\Mail\MailServiceProvider::class,
-        Illuminate\Notifications\NotificationServiceProvider::class,
-        Illuminate\Pagination\PaginationServiceProvider::class,
-        Illuminate\Pipeline\PipelineServiceProvider::class,
-        Illuminate\Queue\QueueServiceProvider::class,
-        Illuminate\Redis\RedisServiceProvider::class,
-        Illuminate\Routing\RoutingServiceProvider::class,
-        Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
-        Illuminate\Session\SessionServiceProvider::class,
-        Illuminate\Translation\TranslationServiceProvider::class,
-        Illuminate\Validation\ValidationServiceProvider::class,
-        Roots\Acorn\Assets\AssetsServiceProvider::class,
-        Roots\Acorn\Filesystem\FilesystemServiceProvider::class,
-        Roots\Acorn\Providers\AcornServiceProvider::class,
-        Roots\Acorn\Providers\RouteServiceProvider::class,
-        Roots\Acorn\View\ViewServiceProvider::class,
-
+    'providers' => ServiceProvider::defaultProviders()->merge([
         /*
          * Package Service Providers...
          */
@@ -196,8 +168,8 @@ return [
         /*
          * Application Service Providers...
          */
-
-    ],
+        // App\Providers\ThemeServiceProvider::class,
+    ])->toArray(),
 
     /*
     |--------------------------------------------------------------------------
@@ -211,7 +183,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // 'ExampleClass' => App\Example\ExampleClass::class,
+        // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
 ];

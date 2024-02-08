@@ -34,7 +34,7 @@ class AssetsServiceProvider extends ServiceProvider
          */
         collect([
             'wp_head' => '@livewireStyles',
-            'wp_footer' => '@livewireScripts',
+            'wp_footer' => '@livewireScriptConfig',
         ])->each(fn ($directive, $hook) =>
         add_action($hook, function () use ($directive) {
             echo Blade::render($directive);
