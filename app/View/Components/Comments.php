@@ -40,7 +40,7 @@ class Comments extends Composer
     public function title()
     {
         return sprintf(
-        /* translators: %1$s is replaced with the number of comments and %2$s with the post title */
+            /* translators: %1$s is replaced with the number of comments and %2$s with the post title */
             _nx('%1$s response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'radicle'),
             get_comments_number() === 1 ? _x('One', 'comments title', 'radicle') : number_format_i18n(get_comments_number()),
             '<span>'.get_the_title().'</span>'

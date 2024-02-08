@@ -59,6 +59,9 @@ jobs:
       - name: Checkout the project
         uses: actions/checkout@v4
 
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Setup the Node ${{ matrix.node }} environment on ${{ runner.os }}
         uses: actions/setup-node@v4
         with:
