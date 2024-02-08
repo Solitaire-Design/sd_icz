@@ -72,8 +72,9 @@ jobs:
       - name: Install dependencies using Yarn
         run: yarn install --frozen-lockfile
 
-      - name: Build and compile assets
-        run: |
-          cat public/dist/entrypoints.json
-          cat public/dist/manifest.json
-          cat public/dist/theme.json
+#      - name: Build and compile assets
+#        run: |
+#          yarn build
+#          cat public/dist/entrypoints.json
+#          cat public/dist/manifest.json
+#          cat public/dist/theme.json
