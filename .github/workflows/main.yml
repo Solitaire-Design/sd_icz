@@ -74,7 +74,6 @@ jobs:
 
       - name: Build and compile assets
         run: |
-          yarn build
           cat public/dist/entrypoints.json
           cat public/dist/manifest.json
           cat public/dist/theme.json
